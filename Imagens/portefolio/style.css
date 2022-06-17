@@ -1,0 +1,114 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+body {
+ font-family: "Lucida Handwriting" ; margin-left: 0;margin-top: 0;background-color: #D8D9D7;
+}
+
+nav {
+ position: fixed;left: 0;z-index: 13; top: 0;box-sizing: border-box;display: flex;
+ justify-content: right;
+}
+#menu {
+ position: sticky; background-color: #262626;padding: 20px;width: 100%;
+}
+ul {
+ padding: 0;background-color: #262626;display: flex;margin-left: 75%;
+}
+li{
+ display: inline;padding: 5px;
+}
+li a {
+ text-decoration: none ;color: white;padding: 5px;
+}
+#Portefolio {
+ text-align: center;margin-top: 75px
+}
+
+ul li a:hover{
+ background-color:  grey;
+}
+
+.galeria  {
+ width: 60%; overflow: hidden ;margin-left: 21%;border: #262626
+}
+.galeria #fotos {
+ width: 500%; animation-name: animacao; animation-duration: 20s; animation-iteration-count: infinite;
+}
+.galeria #fotos img {
+ width: 19.9%;border-radius: 20px;
+}
+@keyframes animacao {
+ 0% {margin-left: 0;}
+ 20% {margin-left: 0;}
+ 25% {margin-left: -100%;}
+ 45% {margin-left: -100%;}
+ 50% {margin-left: -200%;}
+ 70% {margin-left: -200%;}
+ 75% {margin-left: -300%;}
+ 95% {margin-left: -300%;}
+ 100% {margin-left: -400%;}
+}
+
+#sobre {background-color: #262626}
+#sobre h1 {margin-left: 8%;padding-top: 3%;color: #D8D9D7}
+#sobre img {width: 30%;padding-top: 0.5%;margin-left: 33%;float: right}
+#sobre p {width: 35%;padding-top: 8%;margin-left: 12%;color: #D8D9D7;font-family: Arial;font-size: larger;margin-bottom: 5%}
+
+#gal {padding-top: 10%}
+#gal h1 {padding-top: 2%;margin-left: 50%}
+
+
+.gallery-container{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+ gap: 2vw;
+ padding: 0 2vw;
+ margin-top: 5%;
+}
+.gallery-items{
+ width: 30%;
+ height: 30%;
+ border: 10px solid #D8D9D7;
+ box-shadow: 5px 5px 5px #8C8D88;
+ flex-grow: 1;
+ transition: transform .5s linear;
+}
+.gallery-items img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+.gallery-items:hover{
+ transform: scale(1.2);
+}
+
+.imagem1 img {
+ width: 40%;
+ height: 40%;
+ border: #8C8D88;
+ margin-left: 5%;
+ float: left;
+ margin-top: 0;
+}
+.imagem1 p {
+ width: 45%;padding-top: 2%;float: left;margin-left: 8%;
+}
+.prox img {
+ width: 5%;float: right;padding-right: 1%;
+}
+.ant img {
+ width: 5%;float: left;padding-left: 1%;
+}
+
+
+footer {
+ bottom: 0; background-color: #262626;text-align: center;padding: 40px;color: white;width: 100%;margin-top: 20%;
+}
+footer img{
+ width: 6%;bottom: 0;padding-left: 3%;
+}
